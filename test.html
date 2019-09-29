@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <canvas id="myCanvas" width="200" height="200" style="border:1px solid black;">
+    Your browser does not support the canvas element.
+  </canvas>
+
+  <canvas id="myCanvas1" style="border:1px solid black; width:200px;height:200px;">
+    Your browser does not support the canvas element.
+  </canvas>
+
+  <canvas id="myCanvas2" style="border:1px solid black;">
+    Your browser does not support the canvas element.
+  </canvas>
+  <script type="text/javascript">
+    var c = document.getElementById("myCanvas");
+    var cxt = c.getContext("2d");
+    cxt.moveTo(0, 0);
+    cxt.lineTo(200, 200);
+    cxt.stroke();
+
+
+    var c = document.getElementById("myCanvas1");
+    var cxt = c.getContext("2d");
+    cxt.moveTo(0, 0);
+    cxt.lineTo(200, 200);
+    cxt.stroke();
+
+    var c = document.getElementById("myCanvas2");
+    var cxt = c.getContext("2d");
+    cxt.moveTo(0, 0);
+    cxt.lineTo(200, 200);
+    cxt.stroke();
+
+  </script>
+</body>
+
+</html>
